@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="main.js"></script>
+
 <html>
+    <head>
+        <link rel="stylesheet" href="design.css" />
+    </head>
     <header> <title> Happy Birthday! </title> 
         <!--canvas shell-->
-        <p style = "text-align: center;"><canvas id = "Cake" width = "800" height = "550" style = "border:2px solid #000000"> </canvas></p>
-        <!--cake image-->
-        <img id = "pic" src = "cake1.png" style = "display:none;">
+        <p style = "text-align: center;">
+            <!--cake image-->
+            <img class="cake" src="img/cake.png">
+        </p>
+
         <!--interface-->
         <p style = "text-align: center"> <input onclick = "change()" type = "button" value = "Light" id = "Match" style = "text-align: center;"> </input> </p>
     </header>
