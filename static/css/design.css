@@ -19,6 +19,7 @@ div {
   width: 100%;
   max-width: 1000px;
   z-index: 9;
+  text-align: center;
 }
 .cake {
   max-width: 500px;
@@ -27,4 +28,3 @@ div {
 .birthdayfont {
   max-width: 500px;
 }
-
