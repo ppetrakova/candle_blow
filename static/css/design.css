@@ -9,8 +9,6 @@ div {
 }
 
 #stuff {
-  white-space: nowrap;
-  display: inline-block;
   overflow: hidden;
   position: absolute;
   padding: 20px;
@@ -25,3 +23,8 @@ div {
 .cake {
   max-width: 500px;
 }
+
+.birthdayfont {
+  max-width: 500px;
+}
+
