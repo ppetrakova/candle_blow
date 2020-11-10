@@ -1,47 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <header> <title> Happy Birthday! </title> 
+
+<head>
+    <link rel="stylesheet" href="design.css" />
+</head>
+<header>
+    <title> Happy Birthday! </title>
+</header>
+
+<body>
+    <canvas id="confetti-holder"></canvas>
+    <div id="stuff">
         <!--canvas shell-->
-        <p style = "text-align: center;"><canvas id = "Cake" width = "800" height = "550" style = "border:2px solid #000000"> </canvas></p>
+        <p style="text-align: center;"><canvas id="Cake" width="800" height="550"
+                style="border:2px solid #000000"></p>
         <!--cake image-->
-        <img id = "pic" src = "cake1.png" style = "display:none;">
+        <img id="pic" src="cake1.png" style="display:none;">
         <!--interface-->
-        <p style = "text-align: center"> <input onclick = "change()" type = "button" value = "Light" id = "Match" style = "text-align: center;"> </input> </p>
-    </header>
-    <body>
-    <script> 
-    function twoStep() {
-        //cakeinit();
-        start();
-
-    } function start() {
-        var c = document.getElementById("Load");
-        var ex = c.getContext("2d");
-        var img = document.getElementById("pic");
-        var btn = document.getElementById("strt");
-        ex.drawImage(img, 0, 0);
-        btn.remove().innerHTML;
-
-    // } //function cakeinit() {
-    //     var dis = document.getElementById('');
-    //     if (dis.style.display === 'none') {
-    //         dis.style.display = 'block';
-    //     } else dis.style.display = 'none';
-
-    } function change() {
-       var fetch = document.getElementById("Match");
-       if (fetch.value == "Light") {
-           fetch.value = "Blow";
-           dis.style("text-align: center");
-       }
-       else {
-           fetch.value = "Light";
-           dis.style("text-align: center");
-           }
-    } 
-
-    </script> 
-
-    </body>
+        <p style="text-align: center"> <input onclick="change()" type="button" value="Light"
+                id="Match" style="text-align: center;"> </input> </p>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="main.js"></script>
+</body>
 
 </html>
