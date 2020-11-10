@@ -2,7 +2,6 @@ var confettiSettings = { "target": "confetti-holder", "max": "1500", "size": "1"
 var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
 function twoStep() {
-    //cakeinit();
     start();
 
 } function start() {
@@ -12,12 +11,6 @@ function twoStep() {
     var btn = document.getElementById("strt");
     ex.drawImage(img, 0, 0);
     btn.remove().innerHTML;
-
-    // } //function cakeinit() {
-    //     var dis = document.getElementById('');
-    //     if (dis.style.display === 'none') {
-    //         dis.style.display = 'block';
-    //     } else dis.style.display = 'none';
 
 } function change() {
     var fetch = document.getElementById("Match");
@@ -29,4 +22,15 @@ function twoStep() {
         fetch.value = "Light";
         dis.style("text-align: center");
     }
+}
+
+function blow_out(){
+    var image = document.getElementById("cake_img")
+    if (image.src.match("cake_off")){
+        image.src = "static/img/cake_on.png"
+    }
+    else{
+        image.src = "static/img/cake_off.png"
+    }
+    
 }
