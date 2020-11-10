@@ -26,5 +26,5 @@ div {
   z-index: 9;
 }
 .cake {
-  size: 100px;
+  max-width: 500px;
 }
