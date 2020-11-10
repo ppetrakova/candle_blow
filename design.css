@@ -1,3 +1,27 @@
+div {
+  box-sizing: border-box;
+}
+#confetti {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#stuff {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  padding: 20px;
+  margin: 0 auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 9;
+}
 .cake {
-    size: 100px;
+  max-width: 500px;
 }

@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" href="design.css" />
-    </head>
-    <header> <title> Happy Birthday! </title> 
+
+<head>
+    <link rel="stylesheet" href="design.css" />
+</head>
+<header>
+    <title> Happy Birthday! </title>
+</header>
+
+<body>
+    <canvas id="confetti-holder"></canvas>
+    <div id="stuff">
         <!--canvas shell-->
-        <p style = "text-align: center;">
+        <p style="text-align: center;">
             <!--cake image-->
             <img class="cake" src="img/cake.png">
         </p>
 
         <!--interface-->
-        <p style = "text-align: center"> <input onclick = "change()" type = "button" value = "Light" id = "Match" style = "text-align: center;"> </input> </p>
-    </header>
-    <body>
-
-    </body>
+        <p style="text-align: center"> <input onclick="change()" type="button" value="Light"
+                id="Match" style="text-align: center;"> </input> </p>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="main.js"></script>
+</body>
 
 </html>
