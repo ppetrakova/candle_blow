@@ -12,25 +12,21 @@ function twoStep() {
     ex.drawImage(img, 0, 0);
     btn.remove().innerHTML;
 
-} function change() {
-    var fetch = document.getElementById("Match");
-    if (fetch.value == "Light") {
-        fetch.value = "Blow";
-        dis.style("text-align: center");
-    }
-    else {
-        fetch.value = "Light";
-        dis.style("text-align: center");
-    }
 }
 
 function blow_out(){
-    var image = document.getElementById("cake_img")
+    var image = document.getElementById("cake_img");
+    var fetch = document.getElementById("Match");
+    console.log(fetch.innerHTML);
     if (image.src.match("cake_off")){
-        image.src = "static/img/cake_on.png"
+        fetch.innerHTML = "Enjoy your birthday!";
+        fetch.disabled = true;
+        image.src = "static/img/cake_on.png";
     }
     else{
-        image.src = "static/img/cake_off.png"
+        fetch.innerHTML = "Make a Wish!";
+
+        image.src = "static/img/cake_off.png";
     }
     
 }
